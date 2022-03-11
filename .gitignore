@@ -33,3 +33,9 @@
 
 # python_tool
 *.py
+
+
+# pdstemp
+*.workspace
+*.pdsbak
+
