@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "D:\\GitHub\\Arduino_Programs\\[Arduino编程从零开始\\001_blinding_led\\Codes\\testArduino\\sketch\\testArduino.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
