@@ -1,0 +1,72 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "D:\\Github\\Arduino_Programs\\web\\002_enternet\\Codes\\testArduino\\sketch\\testArduino.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "D:\\Github\\Arduino_Programs\\web\\002_enternet\\Codes\\testArduino\\sketch\\testArduino.ino.cpp",
+    "Include": "Ethernet.h",
+    "Includepath": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src"
+  },
+  {
+    "Sourcefile": "D:\\Github\\Arduino_Programs\\web\\002_enternet\\Codes\\testArduino\\sketch\\testArduino.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\Dhcp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\Dns.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\Ethernet.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\EthernetClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\EthernetServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\EthernetUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\socket.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\Ethernet\\src\\utility\\w5100.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
