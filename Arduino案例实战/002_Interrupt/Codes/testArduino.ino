@@ -5,22 +5,45 @@ byte bluePin = 6;
 byte led1Pin = 7;
 byte led2Pin = 8;
 
+// micros(), millis(), delay()会使中断失效, delay()实际上是micros()构成的函数
 void led1Light()
 {
     long oldTime = millis();
-    while (true)
+    while (millis() - oldTime < 600)
     {
-        if (millis() - oldTime < 1000)
+        digitalWrite(led1Pin, HIGH);
+        while (millis() - oldTime < 100)
         {
-            digitalWrite(led1Pin, HIGH);
-            oldTime = millis();
+            ;
         }
+        oldTime = millis();
+        digitalWrite(led1Pin, LOW);
+        while (millis() - oldTime < 100)
+        {
+            ;
+        }
+        oldTime = millis();
     }
 }
 
 void led2Light()
 {
-    digitalWrite(led2Pin, HIGH);
+    long oldTime = millis();
+    while (millis() - oldTime < 600)
+    {
+        digitalWrite(led2Pin, HIGH);
+        while (millis() - oldTime < 100)
+        {
+            ;
+        }
+        oldTime = millis();
+        digitalWrite(led2Pin, LOW);
+        while (millis() - oldTime < 100)
+        {
+            ;
+        }
+        oldTime = millis();
+    }
 }
 
 void setup()
@@ -38,13 +61,26 @@ void setup()
 
 void loop()
 {
+    static long oldTime = millis();
     digitalWrite(redPin, HIGH);
-    delay(3000);
+    while (millis() - oldTime < 100)
+    {
+        ;
+    }
+    oldTime = millis();
     digitalWrite(redPin, LOW);
     digitalWrite(greenPin, HIGH);
-    delay(3000);
+    while (millis() - oldTime < 100)
+    {
+        ;
+    }
+    oldTime = millis();
     digitalWrite(greenPin, LOW);
     digitalWrite(bluePin, HIGH);
-    delay(3000);
+    while (millis() - oldTime < 100)
+    {
+        ;
+    }
+    oldTime = millis();
     digitalWrite(bluePin, LOW);
 }

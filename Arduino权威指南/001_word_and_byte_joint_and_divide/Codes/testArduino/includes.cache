@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "D:\\Github\\Arduino_Programs\\Arduino权威指南\\001_word_and_byte_joint_and_divide\\Codes\\testArduino\\sketch\\testArduino.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

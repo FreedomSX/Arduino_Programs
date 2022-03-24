@@ -8,12 +8,42 @@ byte led2Pin = 8;
 
 void led1Light()
 {
-    digitalWrite(led1Pin, 0x1);
+    long oldTime = millis();
+    while (millis() - oldTime < 600)
+    {
+        digitalWrite(led1Pin, 0x1);
+        while (millis() - oldTime < 100)
+        {
+            ;
+        }
+        oldTime = millis();
+        digitalWrite(led1Pin, 0x0);
+        while (millis() - oldTime < 100)
+        {
+            ;
+        }
+        oldTime = millis();
+    }
 }
 
 void led2Light()
 {
-    digitalWrite(led2Pin, 0x1);
+    long oldTime = millis();
+    while (millis() - oldTime < 600)
+    {
+        digitalWrite(led2Pin, 0x1);
+        while (millis() - oldTime < 100)
+        {
+            ;
+        }
+        oldTime = millis();
+        digitalWrite(led2Pin, 0x0);
+        while (millis() - oldTime < 100)
+        {
+            ;
+        }
+        oldTime = millis();
+    }
 }
 
 void setup()
@@ -31,13 +61,26 @@ void setup()
 
 void loop()
 {
+    static long oldTime = millis();
     digitalWrite(redPin, 0x1);
-    delay(3000);
+    while (millis() - oldTime < 100)
+    {
+        ;
+    }
+    oldTime = millis();
     digitalWrite(redPin, 0x0);
     digitalWrite(greenPin, 0x1);
-    delay(3000);
+    while (millis() - oldTime < 100)
+    {
+        ;
+    }
+    oldTime = millis();
     digitalWrite(greenPin, 0x0);
     digitalWrite(bluePin, 0x1);
-    delay(3000);
+    while (millis() - oldTime < 100)
+    {
+        ;
+    }
+    oldTime = millis();
     digitalWrite(bluePin, 0x0);
 }
