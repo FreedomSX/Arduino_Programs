@@ -1,0 +1,17 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\mixly\\arduino\\hardware\\arduino\\avr\\variants\\standard"
+  },
+  {
+    "Sourcefile": "D:\\Github\\Arduino_Programs\\Arduino权威指南\\003_serial_communication\\Codes\\testArduino\\sketch\\testArduino.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

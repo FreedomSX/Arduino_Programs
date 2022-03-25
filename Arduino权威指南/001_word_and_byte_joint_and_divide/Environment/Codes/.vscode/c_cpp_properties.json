@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+            //头文件引用路径
+            "C:\\mixly\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\",
+            "C:\\mixly\\Arduino\\libraries\\**",
+            "C:\\mixly\\Arduino\\hardware\\arduino\\avr\\**",
+            "C:\\mixly\\Arduino\\tools\\**",
+            "C:\\mixly\\Arduino\\hardware\\tools\\avr\\avr\\include\\",
+            "C:\\mixly\\Arduino\\hardware\\tools\\avr\\avr\\include\\avr\\",
+            "C:\\mixly\\Arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include",
+            "C:\\mixly\\Arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\7.3.0\\include-fixed",
+            "C:\\mixly\\Arduino\\hardware\\arduino\\avr\\cores\\arduino\\**",
+            "C:\\mixly\\Arduino\\hardware\\arduino\\avr\\variants\\standard\\**",
+            "C:\\mixly\\arduino\\portable\\sketchbook\\libraries\\**"
+
+            ],
+            "forcedInclude": [
+                "C:\\mixly\\arduino\\hardware\\arduino\\avr\\cores\\arduino\\Arduino.h"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:\\mixly\\arduino\\libraries"
+                ]
+            },
+            "intelliSenseMode": "msvc-x64",
+            "defines": [
+                "USBCON"
+            ]
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,22 @@
+import processing.serial.*;
+
+Serial myPort;
+
+int rectMargin = 40;
+int fontSize = 12;
+int maxNumOfLabels = fontSize;
+
+int windowWidth = 600;
+int windowHeight = rectMargin + (maxNumOfLabels + 1) * (fontSize * 2);
+
+int rectWidth = windowWidth - rectMargin * 2;
+int rectHeight = windowHeight - rectMargin;\
+int rectCenter = rectMargin + rectWidth / 2;
+
+int origin = rectCenter;
+int minVal = -127;
+int maxVal = 127;
+
+float scale = float(rectWidth) / (maxVal - minVal);
+
+String [] sensorLabels = {"s1", }
