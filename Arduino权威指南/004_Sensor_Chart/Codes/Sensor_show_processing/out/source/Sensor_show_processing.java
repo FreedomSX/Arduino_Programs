@@ -92,17 +92,24 @@ public void drawBar(int yIndex, int value)
 }
 
 public void draw() {
-    if (myPort.available() > 0) {
-        background(208);
-        recStr = myPort.readStringUntil('@');
-        recStr = recStr.substring(0, recStr.length() - 1);
-        println(recStr);
-        drawGrid();
-        String [] recStrLst = recStr.split(",");
-        for (int i = 0; i < recStrLst.length; ++i) {
-            println(recStrLst[i]);
-            drawBar(i, Integer.parseInt(recStrLst[i].trim()));
+    try{
+        if (myPort.available() > 0) {
+            recStr = myPort.readStringUntil('@');
+            if (recStr != null) {
+                recStr = recStr.substring(0, recStr.length() - 1);
+                println(recStr);
+                String [] recStrLst = recStr.split(",");
+                background(208);
+                drawGrid();
+                for (int i = 0; i < recStrLst.length; ++i) {
+                    println(recStrLst[i]);
+                    drawBar(i, Integer.parseInt(recStrLst[i].trim()));
+                }
+            }
         }
+    }
+    catch (Exception e) {
+        e.printStackTrace();
     }
 }
 
